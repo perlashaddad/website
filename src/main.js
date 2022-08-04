@@ -11,5 +11,7 @@ var app = createApp(App);
 app.config.globalProperties.$aframe = aframe;
 app.config.globalProperties.$unityWebgl = UnityWebgl;
 
+console.log(process.env.VUE_APP_VERSION);
+
 app.use(router).mount("#app");
 import "bootstrap/dist/js/bootstrap.js";
