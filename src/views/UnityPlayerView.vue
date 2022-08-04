@@ -71,7 +71,7 @@ export default {
     console.log("Immersivehaus console:", this.canvasRef);
     if (!this.unityComponent) {
       this.loading = true;
-      this.unityComponent = new this.$unityWgl(this.canvasRef, this.config);
+      this.unityComponent = new this.$unityWebgl(this.canvasRef, this.config);
     }
     if (this.unityComponent) setTimeout(() => (this.loading = false), 3000);
   },
