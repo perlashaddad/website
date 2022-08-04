@@ -1,10 +1,31 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <div id="app">
+    <immhaus-navbar nav-items="navItems"></immhaus-navbar>
+    <router-view />
+  </div>
 </template>
+
+<script>
+import ImmhausNavbar from "@/components/ImmhausNavbar";
+
+export default {
+  name: "App",
+  data() {
+    return {
+      navItems: [
+        { label: "Home", path: "/" },
+        { label: "Examples", path: "/examples" },
+        { label: "Documentation", path: "/docs" },
+        { label: "Unity", path: "/unity" },
+        { label: "Download", path: "/download" },
+      ],
+    };
+  },
+  components: {
+    ImmhausNavbar,
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
