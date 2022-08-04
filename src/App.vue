@@ -48,4 +48,8 @@ nav {
     }
   }
 }
+.a-canvas {
+  display: block !important;
+  width: 400px !important;
+}
 </style>

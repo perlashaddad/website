@@ -48,14 +48,14 @@ export default {
     return {
       loading: true,
       config: {
-        loaderUrl: "/immhaus/Build/unity.loader.js",
-        dataUrl: "/immhaus/Build/unity.data",
-        frameworkUrl: "/immhaus/Build/unity.framework.js",
-        codeUrl: "/immhaus/Build/unity.wasm",
+        loaderUrl: "/unity/Build/unity.loader.js",
+        dataUrl: "/unity/Build/unity.data",
+        frameworkUrl: "/unity/Build/unity.framework.js",
+        codeUrl: "/unity/Build/unity.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Immersive Haus",
         productName: "Beta",
-        productVersion: "0.1",
+        productVersion: process.env.VUE_APP_VERSION,
       },
     };
   },
